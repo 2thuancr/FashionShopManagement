@@ -29,8 +29,19 @@
         private void InitializeComponent()
         {
             this.MIDPL = new System.Windows.Forms.Panel();
+            this.btn_ChienDich = new ReaLTaiizor.Controls.PoisonTile();
+            this.btn_NhanVien = new ReaLTaiizor.Controls.PoisonTile();
+            this.btn_CaiDat = new ReaLTaiizor.Controls.PoisonTile();
+            this.btn_SanPham = new ReaLTaiizor.Controls.PoisonTile();
+            this.btn_BaoCao = new ReaLTaiizor.Controls.PoisonTile();
+            this.btn_KhachHang = new ReaLTaiizor.Controls.PoisonTile();
+            this.btn_DonHang = new ReaLTaiizor.Controls.PoisonTile();
             this.FILLPL = new System.Windows.Forms.Panel();
+            this.panel_Top = new System.Windows.Forms.Panel();
+            this.image_Banner = new System.Windows.Forms.PictureBox();
+            this.PROTECTLE = new ReaLTaiizor.Controls.LabelEdit();
             this.BOTPL = new System.Windows.Forms.Panel();
+            this.comboBox_Language = new System.Windows.Forms.ComboBox();
             this.CONNECTT = new ReaLTaiizor.Controls.MetroTile();
             this.CONTACTT = new ReaLTaiizor.Controls.MetroTile();
             this.SETTINGT = new ReaLTaiizor.Controls.MetroTile();
@@ -39,21 +50,11 @@
             this.BOTPLSR = new ReaLTaiizor.Controls.LostSeparator();
             this.label_Role = new ReaLTaiizor.Controls.LinkLabelEdit();
             this.crownContextMenuStrip1 = new ReaLTaiizor.Controls.CrownContextMenuStrip();
-            this.btn_ChienDich = new ReaLTaiizor.Controls.PoisonTile();
-            this.btn_NhanVien = new ReaLTaiizor.Controls.PoisonTile();
-            this.btn_CaiDat = new ReaLTaiizor.Controls.PoisonTile();
-            this.btn_SanPham = new ReaLTaiizor.Controls.PoisonTile();
-            this.btn_BaoCao = new ReaLTaiizor.Controls.PoisonTile();
-            this.btn_KhachHang = new ReaLTaiizor.Controls.PoisonTile();
-            this.btn_DonHang = new ReaLTaiizor.Controls.PoisonTile();
-            this.panel_Top = new System.Windows.Forms.Panel();
-            this.image_Banner = new System.Windows.Forms.PictureBox();
-            this.PROTECTLE = new ReaLTaiizor.Controls.LabelEdit();
             this.MIDPL.SuspendLayout();
             this.FILLPL.SuspendLayout();
-            this.BOTPL.SuspendLayout();
             this.panel_Top.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.image_Banner)).BeginInit();
+            this.BOTPL.SuspendLayout();
             this.SuspendLayout();
             // 
             // MIDPL
@@ -73,6 +74,179 @@
             this.MIDPL.Size = new System.Drawing.Size(1132, 433);
             this.MIDPL.TabIndex = 6;
             // 
+            // btn_ChienDich
+            // 
+            this.btn_ChienDich.ActiveControl = null;
+            this.btn_ChienDich.BackColor = System.Drawing.Color.White;
+            this.btn_ChienDich.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_ChienDich.ForeColor = System.Drawing.Color.Black;
+            this.btn_ChienDich.Location = new System.Drawing.Point(853, 38);
+            this.btn_ChienDich.Margin = new System.Windows.Forms.Padding(4);
+            this.btn_ChienDich.Name = "btn_ChienDich";
+            this.btn_ChienDich.Size = new System.Drawing.Size(259, 176);
+            this.btn_ChienDich.Style = ReaLTaiizor.Enum.Poison.ColorStyle.White;
+            this.btn_ChienDich.TabIndex = 13;
+            this.btn_ChienDich.Tag = "Campaign";
+            this.btn_ChienDich.Text = "Chiến dịch";
+            this.btn_ChienDich.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btn_ChienDich.TileImage = global::GUI.Properties.Resources.campaign_18189674__2_;
+            this.btn_ChienDich.TileImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btn_ChienDich.TileTextFontWeight = ReaLTaiizor.Extension.Poison.PoisonTileTextWeight.Bold;
+            this.btn_ChienDich.UseCustomBackColor = true;
+            this.btn_ChienDich.UseCustomForeColor = true;
+            this.btn_ChienDich.UseSelectable = true;
+            this.btn_ChienDich.UseStyleColors = true;
+            this.btn_ChienDich.UseTileImage = true;
+            this.btn_ChienDich.Click += new System.EventHandler(this.btn_ChienDich_Click);
+            // 
+            // btn_NhanVien
+            // 
+            this.btn_NhanVien.ActiveControl = null;
+            this.btn_NhanVien.BackColor = System.Drawing.Color.White;
+            this.btn_NhanVien.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_NhanVien.ForeColor = System.Drawing.Color.Black;
+            this.btn_NhanVien.Location = new System.Drawing.Point(38, 228);
+            this.btn_NhanVien.Margin = new System.Windows.Forms.Padding(4);
+            this.btn_NhanVien.Name = "btn_NhanVien";
+            this.btn_NhanVien.Size = new System.Drawing.Size(260, 176);
+            this.btn_NhanVien.Style = ReaLTaiizor.Enum.Poison.ColorStyle.White;
+            this.btn_NhanVien.TabIndex = 12;
+            this.btn_NhanVien.Tag = "Staff";
+            this.btn_NhanVien.Text = "Nhân viên";
+            this.btn_NhanVien.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btn_NhanVien.TileImage = global::GUI.Properties.Resources.people;
+            this.btn_NhanVien.TileImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btn_NhanVien.TileTextFontWeight = ReaLTaiizor.Extension.Poison.PoisonTileTextWeight.Bold;
+            this.btn_NhanVien.UseCustomBackColor = true;
+            this.btn_NhanVien.UseCustomForeColor = true;
+            this.btn_NhanVien.UseSelectable = true;
+            this.btn_NhanVien.UseStyleColors = true;
+            this.btn_NhanVien.UseTileImage = true;
+            this.btn_NhanVien.Click += new System.EventHandler(this.btn_NhanVien_Click);
+            // 
+            // btn_CaiDat
+            // 
+            this.btn_CaiDat.ActiveControl = null;
+            this.btn_CaiDat.BackColor = System.Drawing.Color.White;
+            this.btn_CaiDat.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_CaiDat.ForeColor = System.Drawing.Color.Black;
+            this.btn_CaiDat.Location = new System.Drawing.Point(585, 228);
+            this.btn_CaiDat.Margin = new System.Windows.Forms.Padding(4);
+            this.btn_CaiDat.Name = "btn_CaiDat";
+            this.btn_CaiDat.Size = new System.Drawing.Size(260, 176);
+            this.btn_CaiDat.Style = ReaLTaiizor.Enum.Poison.ColorStyle.White;
+            this.btn_CaiDat.TabIndex = 10;
+            this.btn_CaiDat.Tag = "Shift";
+            this.btn_CaiDat.Text = "Phân Ca";
+            this.btn_CaiDat.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btn_CaiDat.TileImage = global::GUI.Properties.Resources.working;
+            this.btn_CaiDat.TileImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btn_CaiDat.TileTextFontWeight = ReaLTaiizor.Extension.Poison.PoisonTileTextWeight.Bold;
+            this.btn_CaiDat.UseCustomBackColor = true;
+            this.btn_CaiDat.UseCustomForeColor = true;
+            this.btn_CaiDat.UseSelectable = true;
+            this.btn_CaiDat.UseStyleColors = true;
+            this.btn_CaiDat.UseTileImage = true;
+            this.btn_CaiDat.Click += new System.EventHandler(this.btn_CaiDat_Click);
+            // 
+            // btn_SanPham
+            // 
+            this.btn_SanPham.ActiveControl = null;
+            this.btn_SanPham.BackColor = System.Drawing.Color.White;
+            this.btn_SanPham.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_SanPham.ForeColor = System.Drawing.Color.Black;
+            this.btn_SanPham.Location = new System.Drawing.Point(38, 38);
+            this.btn_SanPham.Margin = new System.Windows.Forms.Padding(4);
+            this.btn_SanPham.Name = "btn_SanPham";
+            this.btn_SanPham.Size = new System.Drawing.Size(260, 176);
+            this.btn_SanPham.Style = ReaLTaiizor.Enum.Poison.ColorStyle.White;
+            this.btn_SanPham.TabIndex = 8;
+            this.btn_SanPham.Tag = "Product";
+            this.btn_SanPham.Text = "Sản phẩm";
+            this.btn_SanPham.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btn_SanPham.TileImage = global::GUI.Properties.Resources.wardrobe;
+            this.btn_SanPham.TileImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btn_SanPham.TileTextFontWeight = ReaLTaiizor.Extension.Poison.PoisonTileTextWeight.Bold;
+            this.btn_SanPham.UseCustomBackColor = true;
+            this.btn_SanPham.UseCustomForeColor = true;
+            this.btn_SanPham.UseSelectable = true;
+            this.btn_SanPham.UseStyleColors = true;
+            this.btn_SanPham.UseTileImage = true;
+            this.btn_SanPham.Click += new System.EventHandler(this.btn_SanPham_Click);
+            // 
+            // btn_BaoCao
+            // 
+            this.btn_BaoCao.ActiveControl = null;
+            this.btn_BaoCao.BackColor = System.Drawing.Color.White;
+            this.btn_BaoCao.ForeColor = System.Drawing.Color.Black;
+            this.btn_BaoCao.Location = new System.Drawing.Point(310, 228);
+            this.btn_BaoCao.Margin = new System.Windows.Forms.Padding(4);
+            this.btn_BaoCao.Name = "btn_BaoCao";
+            this.btn_BaoCao.Size = new System.Drawing.Size(260, 176);
+            this.btn_BaoCao.Style = ReaLTaiizor.Enum.Poison.ColorStyle.White;
+            this.btn_BaoCao.TabIndex = 7;
+            this.btn_BaoCao.Tag = "Report";
+            this.btn_BaoCao.Text = "Báo cáo";
+            this.btn_BaoCao.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btn_BaoCao.TileImage = global::GUI.Properties.Resources.report1;
+            this.btn_BaoCao.TileImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btn_BaoCao.TileTextFontWeight = ReaLTaiizor.Extension.Poison.PoisonTileTextWeight.Bold;
+            this.btn_BaoCao.UseCustomBackColor = true;
+            this.btn_BaoCao.UseCustomForeColor = true;
+            this.btn_BaoCao.UseSelectable = true;
+            this.btn_BaoCao.UseStyleColors = true;
+            this.btn_BaoCao.UseTileImage = true;
+            this.btn_BaoCao.Click += new System.EventHandler(this.btn_BaoCao_Click);
+            // 
+            // btn_KhachHang
+            // 
+            this.btn_KhachHang.ActiveControl = null;
+            this.btn_KhachHang.BackColor = System.Drawing.Color.White;
+            this.btn_KhachHang.ForeColor = System.Drawing.Color.Black;
+            this.btn_KhachHang.Location = new System.Drawing.Point(585, 38);
+            this.btn_KhachHang.Margin = new System.Windows.Forms.Padding(4);
+            this.btn_KhachHang.Name = "btn_KhachHang";
+            this.btn_KhachHang.Size = new System.Drawing.Size(260, 176);
+            this.btn_KhachHang.Style = ReaLTaiizor.Enum.Poison.ColorStyle.White;
+            this.btn_KhachHang.TabIndex = 6;
+            this.btn_KhachHang.Tag = "Client";
+            this.btn_KhachHang.Text = "Khách hàng";
+            this.btn_KhachHang.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btn_KhachHang.TileImage = global::GUI.Properties.Resources.customer_satisfaction;
+            this.btn_KhachHang.TileImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btn_KhachHang.TileTextFontWeight = ReaLTaiizor.Extension.Poison.PoisonTileTextWeight.Bold;
+            this.btn_KhachHang.UseCustomBackColor = true;
+            this.btn_KhachHang.UseCustomForeColor = true;
+            this.btn_KhachHang.UseSelectable = true;
+            this.btn_KhachHang.UseStyleColors = true;
+            this.btn_KhachHang.UseTileImage = true;
+            this.btn_KhachHang.Click += new System.EventHandler(this.btn_KhachHang_Click);
+            // 
+            // btn_DonHang
+            // 
+            this.btn_DonHang.ActiveControl = null;
+            this.btn_DonHang.BackColor = System.Drawing.Color.White;
+            this.btn_DonHang.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_DonHang.ForeColor = System.Drawing.Color.Black;
+            this.btn_DonHang.Location = new System.Drawing.Point(310, 38);
+            this.btn_DonHang.Margin = new System.Windows.Forms.Padding(4);
+            this.btn_DonHang.Name = "btn_DonHang";
+            this.btn_DonHang.Size = new System.Drawing.Size(260, 176);
+            this.btn_DonHang.Style = ReaLTaiizor.Enum.Poison.ColorStyle.White;
+            this.btn_DonHang.TabIndex = 5;
+            this.btn_DonHang.Tag = "Order";
+            this.btn_DonHang.Text = "Đơn hàng";
+            this.btn_DonHang.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btn_DonHang.TileImage = global::GUI.Properties.Resources.trolley;
+            this.btn_DonHang.TileImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btn_DonHang.TileTextFontWeight = ReaLTaiizor.Extension.Poison.PoisonTileTextWeight.Bold;
+            this.btn_DonHang.UseCustomBackColor = true;
+            this.btn_DonHang.UseCustomForeColor = true;
+            this.btn_DonHang.UseSelectable = true;
+            this.btn_DonHang.UseStyleColors = true;
+            this.btn_DonHang.UseTileImage = true;
+            this.btn_DonHang.Click += new System.EventHandler(this.btn_DonHang_Click);
+            // 
             // FILLPL
             // 
             this.FILLPL.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(246)))), ((int)(((byte)(246)))));
@@ -87,9 +261,52 @@
             this.FILLPL.Size = new System.Drawing.Size(1132, 682);
             this.FILLPL.TabIndex = 5;
             // 
+            // panel_Top
+            // 
+            this.panel_Top.BackColor = System.Drawing.Color.White;
+            this.panel_Top.BackgroundImage = global::GUI.Properties.Resources.Home1__2_;
+            this.panel_Top.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel_Top.Controls.Add(this.image_Banner);
+            this.panel_Top.Controls.Add(this.PROTECTLE);
+            this.panel_Top.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel_Top.Location = new System.Drawing.Point(0, 0);
+            this.panel_Top.Margin = new System.Windows.Forms.Padding(0);
+            this.panel_Top.Name = "panel_Top";
+            this.panel_Top.Size = new System.Drawing.Size(1132, 201);
+            this.panel_Top.TabIndex = 1;
+            this.panel_Top.MouseDown += new System.Windows.Forms.MouseEventHandler(this.MOVE_MouseDown);
+            // 
+            // image_Banner
+            // 
+            this.image_Banner.BackColor = System.Drawing.Color.Transparent;
+            this.image_Banner.BackgroundImage = global::GUI.Properties.Resources._3685416_934__1_;
+            this.image_Banner.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.image_Banner.Location = new System.Drawing.Point(22, 13);
+            this.image_Banner.Margin = new System.Windows.Forms.Padding(4);
+            this.image_Banner.Name = "image_Banner";
+            this.image_Banner.Size = new System.Drawing.Size(491, 169);
+            this.image_Banner.TabIndex = 9;
+            this.image_Banner.TabStop = false;
+            this.image_Banner.MouseDown += new System.Windows.Forms.MouseEventHandler(this.MOVE_MouseDown);
+            // 
+            // PROTECTLE
+            // 
+            this.PROTECTLE.BackColor = System.Drawing.Color.Transparent;
+            this.PROTECTLE.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Bold);
+            this.PROTECTLE.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.PROTECTLE.Location = new System.Drawing.Point(533, 58);
+            this.PROTECTLE.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.PROTECTLE.Name = "PROTECTLE";
+            this.PROTECTLE.Size = new System.Drawing.Size(312, 77);
+            this.PROTECTLE.TabIndex = 8;
+            this.PROTECTLE.Tag = "Hi";
+            this.PROTECTLE.Text = "Hi ! Chào bạn đến với Fashion Shop";
+            this.PROTECTLE.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // BOTPL
             // 
             this.BOTPL.BackColor = System.Drawing.Color.White;
+            this.BOTPL.Controls.Add(this.comboBox_Language);
             this.BOTPL.Controls.Add(this.CONNECTT);
             this.BOTPL.Controls.Add(this.CONTACTT);
             this.BOTPL.Controls.Add(this.SETTINGT);
@@ -103,6 +320,18 @@
             this.BOTPL.Name = "BOTPL";
             this.BOTPL.Size = new System.Drawing.Size(1132, 48);
             this.BOTPL.TabIndex = 0;
+            // 
+            // comboBox_Language
+            // 
+            this.comboBox_Language.FormattingEnabled = true;
+            this.comboBox_Language.Items.AddRange(new object[] {
+            "EN",
+            "VI"});
+            this.comboBox_Language.Location = new System.Drawing.Point(619, 12);
+            this.comboBox_Language.Name = "comboBox_Language";
+            this.comboBox_Language.Size = new System.Drawing.Size(57, 28);
+            this.comboBox_Language.TabIndex = 14;
+            this.comboBox_Language.SelectedIndexChanged += new System.EventHandler(this.comboBox_Language_SelectedIndexChanged);
             // 
             // CONNECTT
             // 
@@ -272,213 +501,6 @@
             this.crownContextMenuStrip1.Name = "crownContextMenuStrip1";
             this.crownContextMenuStrip1.Size = new System.Drawing.Size(61, 4);
             // 
-            // btn_ChienDich
-            // 
-            this.btn_ChienDich.ActiveControl = null;
-            this.btn_ChienDich.BackColor = System.Drawing.Color.White;
-            this.btn_ChienDich.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_ChienDich.ForeColor = System.Drawing.Color.Black;
-            this.btn_ChienDich.Location = new System.Drawing.Point(853, 38);
-            this.btn_ChienDich.Margin = new System.Windows.Forms.Padding(4);
-            this.btn_ChienDich.Name = "btn_ChienDich";
-            this.btn_ChienDich.Size = new System.Drawing.Size(259, 176);
-            this.btn_ChienDich.Style = ReaLTaiizor.Enum.Poison.ColorStyle.White;
-            this.btn_ChienDich.TabIndex = 13;
-            this.btn_ChienDich.Text = "Chiến dịch";
-            this.btn_ChienDich.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.btn_ChienDich.TileImage = global::GUI.Properties.Resources.campaign_18189674__2_;
-            this.btn_ChienDich.TileImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.btn_ChienDich.TileTextFontWeight = ReaLTaiizor.Extension.Poison.PoisonTileTextWeight.Bold;
-            this.btn_ChienDich.UseCustomBackColor = true;
-            this.btn_ChienDich.UseCustomForeColor = true;
-            this.btn_ChienDich.UseSelectable = true;
-            this.btn_ChienDich.UseStyleColors = true;
-            this.btn_ChienDich.UseTileImage = true;
-            this.btn_ChienDich.Click += new System.EventHandler(this.btn_ChienDich_Click);
-            // 
-            // btn_NhanVien
-            // 
-            this.btn_NhanVien.ActiveControl = null;
-            this.btn_NhanVien.BackColor = System.Drawing.Color.White;
-            this.btn_NhanVien.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_NhanVien.ForeColor = System.Drawing.Color.Black;
-            this.btn_NhanVien.Location = new System.Drawing.Point(38, 228);
-            this.btn_NhanVien.Margin = new System.Windows.Forms.Padding(4);
-            this.btn_NhanVien.Name = "btn_NhanVien";
-            this.btn_NhanVien.Size = new System.Drawing.Size(260, 176);
-            this.btn_NhanVien.Style = ReaLTaiizor.Enum.Poison.ColorStyle.White;
-            this.btn_NhanVien.TabIndex = 12;
-            this.btn_NhanVien.Text = "Nhân viên";
-            this.btn_NhanVien.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.btn_NhanVien.TileImage = global::GUI.Properties.Resources.people;
-            this.btn_NhanVien.TileImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.btn_NhanVien.TileTextFontWeight = ReaLTaiizor.Extension.Poison.PoisonTileTextWeight.Bold;
-            this.btn_NhanVien.UseCustomBackColor = true;
-            this.btn_NhanVien.UseCustomForeColor = true;
-            this.btn_NhanVien.UseSelectable = true;
-            this.btn_NhanVien.UseStyleColors = true;
-            this.btn_NhanVien.UseTileImage = true;
-            this.btn_NhanVien.Click += new System.EventHandler(this.btn_NhanVien_Click);
-            // 
-            // btn_CaiDat
-            // 
-            this.btn_CaiDat.ActiveControl = null;
-            this.btn_CaiDat.BackColor = System.Drawing.Color.White;
-            this.btn_CaiDat.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_CaiDat.ForeColor = System.Drawing.Color.Black;
-            this.btn_CaiDat.Location = new System.Drawing.Point(585, 228);
-            this.btn_CaiDat.Margin = new System.Windows.Forms.Padding(4);
-            this.btn_CaiDat.Name = "btn_CaiDat";
-            this.btn_CaiDat.Size = new System.Drawing.Size(260, 176);
-            this.btn_CaiDat.Style = ReaLTaiizor.Enum.Poison.ColorStyle.White;
-            this.btn_CaiDat.TabIndex = 10;
-            this.btn_CaiDat.Text = "Phân Ca";
-            this.btn_CaiDat.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.btn_CaiDat.TileImage = global::GUI.Properties.Resources.working;
-            this.btn_CaiDat.TileImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.btn_CaiDat.TileTextFontWeight = ReaLTaiizor.Extension.Poison.PoisonTileTextWeight.Bold;
-            this.btn_CaiDat.UseCustomBackColor = true;
-            this.btn_CaiDat.UseCustomForeColor = true;
-            this.btn_CaiDat.UseSelectable = true;
-            this.btn_CaiDat.UseStyleColors = true;
-            this.btn_CaiDat.UseTileImage = true;
-            this.btn_CaiDat.Click += new System.EventHandler(this.btn_CaiDat_Click);
-            // 
-            // btn_SanPham
-            // 
-            this.btn_SanPham.ActiveControl = null;
-            this.btn_SanPham.BackColor = System.Drawing.Color.White;
-            this.btn_SanPham.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_SanPham.ForeColor = System.Drawing.Color.Black;
-            this.btn_SanPham.Location = new System.Drawing.Point(38, 38);
-            this.btn_SanPham.Margin = new System.Windows.Forms.Padding(4);
-            this.btn_SanPham.Name = "btn_SanPham";
-            this.btn_SanPham.Size = new System.Drawing.Size(260, 176);
-            this.btn_SanPham.Style = ReaLTaiizor.Enum.Poison.ColorStyle.White;
-            this.btn_SanPham.TabIndex = 8;
-            this.btn_SanPham.Text = "Sản phẩm";
-            this.btn_SanPham.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.btn_SanPham.TileImage = global::GUI.Properties.Resources.wardrobe;
-            this.btn_SanPham.TileImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.btn_SanPham.TileTextFontWeight = ReaLTaiizor.Extension.Poison.PoisonTileTextWeight.Bold;
-            this.btn_SanPham.UseCustomBackColor = true;
-            this.btn_SanPham.UseCustomForeColor = true;
-            this.btn_SanPham.UseSelectable = true;
-            this.btn_SanPham.UseStyleColors = true;
-            this.btn_SanPham.UseTileImage = true;
-            this.btn_SanPham.Click += new System.EventHandler(this.btn_SanPham_Click);
-            // 
-            // btn_BaoCao
-            // 
-            this.btn_BaoCao.ActiveControl = null;
-            this.btn_BaoCao.BackColor = System.Drawing.Color.White;
-            this.btn_BaoCao.ForeColor = System.Drawing.Color.Black;
-            this.btn_BaoCao.Location = new System.Drawing.Point(310, 228);
-            this.btn_BaoCao.Margin = new System.Windows.Forms.Padding(4);
-            this.btn_BaoCao.Name = "btn_BaoCao";
-            this.btn_BaoCao.Size = new System.Drawing.Size(260, 176);
-            this.btn_BaoCao.Style = ReaLTaiizor.Enum.Poison.ColorStyle.White;
-            this.btn_BaoCao.TabIndex = 7;
-            this.btn_BaoCao.Text = "Báo cáo";
-            this.btn_BaoCao.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.btn_BaoCao.TileImage = global::GUI.Properties.Resources.report1;
-            this.btn_BaoCao.TileImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.btn_BaoCao.TileTextFontWeight = ReaLTaiizor.Extension.Poison.PoisonTileTextWeight.Bold;
-            this.btn_BaoCao.UseCustomBackColor = true;
-            this.btn_BaoCao.UseCustomForeColor = true;
-            this.btn_BaoCao.UseSelectable = true;
-            this.btn_BaoCao.UseStyleColors = true;
-            this.btn_BaoCao.UseTileImage = true;
-            this.btn_BaoCao.Click += new System.EventHandler(this.btn_BaoCao_Click);
-            // 
-            // btn_KhachHang
-            // 
-            this.btn_KhachHang.ActiveControl = null;
-            this.btn_KhachHang.BackColor = System.Drawing.Color.White;
-            this.btn_KhachHang.ForeColor = System.Drawing.Color.Black;
-            this.btn_KhachHang.Location = new System.Drawing.Point(585, 38);
-            this.btn_KhachHang.Margin = new System.Windows.Forms.Padding(4);
-            this.btn_KhachHang.Name = "btn_KhachHang";
-            this.btn_KhachHang.Size = new System.Drawing.Size(260, 176);
-            this.btn_KhachHang.Style = ReaLTaiizor.Enum.Poison.ColorStyle.White;
-            this.btn_KhachHang.TabIndex = 6;
-            this.btn_KhachHang.Text = "Khách hàng";
-            this.btn_KhachHang.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.btn_KhachHang.TileImage = global::GUI.Properties.Resources.customer_satisfaction;
-            this.btn_KhachHang.TileImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.btn_KhachHang.TileTextFontWeight = ReaLTaiizor.Extension.Poison.PoisonTileTextWeight.Bold;
-            this.btn_KhachHang.UseCustomBackColor = true;
-            this.btn_KhachHang.UseCustomForeColor = true;
-            this.btn_KhachHang.UseSelectable = true;
-            this.btn_KhachHang.UseStyleColors = true;
-            this.btn_KhachHang.UseTileImage = true;
-            this.btn_KhachHang.Click += new System.EventHandler(this.btn_KhachHang_Click);
-            // 
-            // btn_DonHang
-            // 
-            this.btn_DonHang.ActiveControl = null;
-            this.btn_DonHang.BackColor = System.Drawing.Color.White;
-            this.btn_DonHang.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_DonHang.ForeColor = System.Drawing.Color.Black;
-            this.btn_DonHang.Location = new System.Drawing.Point(310, 38);
-            this.btn_DonHang.Margin = new System.Windows.Forms.Padding(4);
-            this.btn_DonHang.Name = "btn_DonHang";
-            this.btn_DonHang.Size = new System.Drawing.Size(260, 176);
-            this.btn_DonHang.Style = ReaLTaiizor.Enum.Poison.ColorStyle.White;
-            this.btn_DonHang.TabIndex = 5;
-            this.btn_DonHang.Text = "Đơn hàng";
-            this.btn_DonHang.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.btn_DonHang.TileImage = global::GUI.Properties.Resources.trolley;
-            this.btn_DonHang.TileImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.btn_DonHang.TileTextFontWeight = ReaLTaiizor.Extension.Poison.PoisonTileTextWeight.Bold;
-            this.btn_DonHang.UseCustomBackColor = true;
-            this.btn_DonHang.UseCustomForeColor = true;
-            this.btn_DonHang.UseSelectable = true;
-            this.btn_DonHang.UseStyleColors = true;
-            this.btn_DonHang.UseTileImage = true;
-            this.btn_DonHang.Click += new System.EventHandler(this.btn_DonHang_Click);
-            // 
-            // panel_Top
-            // 
-            this.panel_Top.BackColor = System.Drawing.Color.White;
-            this.panel_Top.BackgroundImage = global::GUI.Properties.Resources.Home1__2_;
-            this.panel_Top.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panel_Top.Controls.Add(this.image_Banner);
-            this.panel_Top.Controls.Add(this.PROTECTLE);
-            this.panel_Top.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel_Top.Location = new System.Drawing.Point(0, 0);
-            this.panel_Top.Margin = new System.Windows.Forms.Padding(0);
-            this.panel_Top.Name = "panel_Top";
-            this.panel_Top.Size = new System.Drawing.Size(1132, 201);
-            this.panel_Top.TabIndex = 1;
-            this.panel_Top.MouseDown += new System.Windows.Forms.MouseEventHandler(this.MOVE_MouseDown);
-            // 
-            // image_Banner
-            // 
-            this.image_Banner.BackColor = System.Drawing.Color.Transparent;
-            this.image_Banner.BackgroundImage = global::GUI.Properties.Resources._3685416_934__1_;
-            this.image_Banner.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.image_Banner.Location = new System.Drawing.Point(22, 13);
-            this.image_Banner.Margin = new System.Windows.Forms.Padding(4);
-            this.image_Banner.Name = "image_Banner";
-            this.image_Banner.Size = new System.Drawing.Size(491, 169);
-            this.image_Banner.TabIndex = 9;
-            this.image_Banner.TabStop = false;
-            this.image_Banner.MouseDown += new System.Windows.Forms.MouseEventHandler(this.MOVE_MouseDown);
-            // 
-            // PROTECTLE
-            // 
-            this.PROTECTLE.BackColor = System.Drawing.Color.Transparent;
-            this.PROTECTLE.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Bold);
-            this.PROTECTLE.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.PROTECTLE.Location = new System.Drawing.Point(533, 58);
-            this.PROTECTLE.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.PROTECTLE.Name = "PROTECTLE";
-            this.PROTECTLE.Size = new System.Drawing.Size(312, 77);
-            this.PROTECTLE.TabIndex = 8;
-            this.PROTECTLE.Text = "Hi ! Chào bạn đến với Fashion Shop";
-            this.PROTECTLE.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
             // fHome
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -493,9 +515,9 @@
             this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.MOVE_MouseDown);
             this.MIDPL.ResumeLayout(false);
             this.FILLPL.ResumeLayout(false);
-            this.BOTPL.ResumeLayout(false);
             this.panel_Top.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.image_Banner)).EndInit();
+            this.BOTPL.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -522,5 +544,6 @@
         private ReaLTaiizor.Controls.LinkLabelEdit label_Role;
         private ReaLTaiizor.Controls.PoisonTile btn_ChienDich;
         private ReaLTaiizor.Controls.CrownContextMenuStrip crownContextMenuStrip1;
+        private System.Windows.Forms.ComboBox comboBox_Language;
     }
 }

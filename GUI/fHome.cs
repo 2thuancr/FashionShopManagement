@@ -32,6 +32,8 @@ namespace GUI
             this.SetStyle(ControlStyles.OptimizedDoubleBuffer, true);
 
             // Chỉ hiện thị những menu mà Account có quyền thực hiện.
+
+            _baseForm = new BaseForm();
         }
 
         private void MOVE_MouseDown(object sender, MouseEventArgs e)
@@ -158,6 +160,29 @@ namespace GUI
         {
             fCampaign fCampaign = new fCampaign();
             fCampaign.Show();
+        }
+
+
+        private BaseForm _baseForm;
+        private void comboBox_Language_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (comboBox_Language.SelectedItem != null)  // Kiểm tra trước khi sử dụng
+            {
+                if (comboBox_Language.SelectedItem.ToString() == "EN")
+                {
+                    _baseForm.ChangeLanguage("en");
+                    _baseForm.UpdateControlsLanguage(this);
+                }
+                else if (comboBox_Language.SelectedItem.ToString() == "VI")
+                {
+                    _baseForm.ChangeLanguage("vi");
+                    _baseForm.UpdateControlsLanguage(this);
+                }
+            }
+            else
+            {
+                MessageBox.Show("Không có ngôn ngữ được chọn.");
+            }
         }
     }
 }

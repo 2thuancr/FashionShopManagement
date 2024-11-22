@@ -220,6 +220,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BaseForm.cs" />
     <Compile Include="fBaoCao.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -342,6 +343,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <Compile Include="Resource.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resource.resx</DependentUpon>
+    </Compile>
     <Compile Include="UC\DatabaseHelper.cs" />
     <Compile Include="UC\GuiHelper.cs" />
     <Compile Include="UC\ImageHelper.cs" />
@@ -412,6 +418,11 @@
     </EmbeddedResource>
     <EmbeddedResource Include="fThemSanPham.resx">
       <DependentUpon>fThemSanPham.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resource.en.resx" />
+    <EmbeddedResource Include="Resource.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resource.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="UC\UCJobCard.resx">
       <DependentUpon>UCJobCard.cs</DependentUpon>

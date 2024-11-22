@@ -22,11 +22,12 @@ namespace DAO
 
         // Hàm khởi tao
         private DataProvider() { }
-        
+        private string connectionString = @"Data Source=.;Initial Catalog=FashionShopManagement;Integrated Security=True";
+
         public DataTable ExecuteQuery(string query, object[] parameter = null)
         {
             DataTable table = new DataTable();
-            using (SqlConnection connection = new SqlConnection(Account.ConnectionString))
+            using (SqlConnection connection = new SqlConnection(connectionString))
             {
                 connection.Open();
                 SqlCommand command = new SqlCommand(query, connection);
@@ -55,7 +56,7 @@ namespace DAO
         public int ExecuteNonQuery(string query, object[] parameter = null)
         {
             int row = 0;
-            using (SqlConnection connection = new SqlConnection(Account.ConnectionString))
+            using (SqlConnection connection = new SqlConnection(connectionString))
             {
                 connection.Open();
                 SqlCommand command = new SqlCommand(query, connection);
@@ -83,7 +84,7 @@ namespace DAO
         public object ExecuteScalar(string query, object[] parameter = null)
         {
             object data = 0;
-            using (SqlConnection connection = new SqlConnection(Account.ConnectionString))
+            using (SqlConnection connection = new SqlConnection(connectionString))
             {
                 connection.Open();
                 SqlCommand command = new SqlCommand(query, connection);
